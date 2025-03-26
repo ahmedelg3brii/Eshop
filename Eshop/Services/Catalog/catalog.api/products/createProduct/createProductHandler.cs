@@ -19,7 +19,7 @@ namespace catalog.api
           {
               Id = Guid.NewGuid(),
               Name = request.Name,
-              Category = request.Category,
+              Category = request.Category,  
               Description = request.Description,
               ImageFile = request.ImageFile,
               Price = request.Price
