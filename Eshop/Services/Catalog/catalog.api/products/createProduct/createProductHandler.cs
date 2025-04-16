@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using catalog.api.products.updateProduct;
+using FluentValidation;
 
 namespace catalog.api
 {

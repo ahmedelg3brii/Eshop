@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FluentValidation;
+using Microsoft.AspNetCore.Mvc.Diagnostics;
 
 
 namespace BuildingBlocks.Exceptions.Handlerpublic;
@@ -18,6 +19,7 @@ public class CustomExceptionHandler
 
         (string Detail, string Title, int StatusCode) details = exception switch
         {
+
             InternalServerException =>
             (
                 exception.Message,
